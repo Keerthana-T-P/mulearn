@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Story Generator</title>
+    <!-- Correct way to link external CSS -->
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <h1>Generate a Random Story</h1>
+    
+    <!-- Input for custom name -->
+    <label for="customname">Enter custom name:</label>
+    <input type="text" id="customname" placeholder="Enter a name">
+    <br><br>
+    
+    <!-- Region selection -->
+    <label for="us">US</label>
+    <input type="radio" id="us" name="region" checked>
+    <label for="uk">UK</label>
+    <input type="radio" id="uk" name="region">
+    <br><br>
+    
+    <!-- Button to generate story -->
+    <button class="randomize">Generate random story</button>
+    
+    <!-- Story output -->
+    <p class="story" style="visibility: hidden;"></p>
+    
+    <!-- Linking the JavaScript file -->
+    <script src="main.js"></script>
+</body>
+</html>
